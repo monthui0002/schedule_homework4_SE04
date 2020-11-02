@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cover" style="padding: 15px;">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="left">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img style="width: 100%; height: 100%;" src="./Huong.jpg" />
+                        </div>
+                        <div class="col-sm-8">
+                            <b>Họ và tên: </b> Phạm Thị Hương <br />
+                            <b>Giới tính: </b> Nữ <br />
+                            <b>Ngày sinh: </b> 29/07/2000 <br />
+                            <b>Khoa: </b> Toán - Cơ - Tin Học <br />
+                            <b>Trường: </b> Đại học Khoa Học Tự Nhiên - DHQGHN <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#import">Nhập thời khóa biểu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#edit">Sửa thời khóa biểu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#delete">Xóa Thời khóa biểu</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="import" class="container tab-pane active"><br>
+                        <button type="button" onclick="alert('Nhập thời khóa biểu!')">Nhập thời khóa biểu</button>
+
+                    </div>
+                    <div id="edit" class="container tab-pane fade"><br>
+                        <button type="button" onclick="alert('Sửa thời khóa biểu!')">Sửa thời khóa biểu</button>
+                    </div>
+                    <div id="delete" class="container tab-pane fade"><br>
+                        <button type="button" onclick="alert('Xóa thời khóa biểu!')">Xóa Thời khóa biểu</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $(".nav-tabs a").click(function () {
+                    $(this).tab('show');
+                });
+            });
+        </script>
+</body>
+
+</html>
